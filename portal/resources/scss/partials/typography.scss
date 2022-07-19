@@ -1,0 +1,62 @@
+@import './colours.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;800&display=swap');
+
+@font-face {
+  font-family: 'Guyon Gazebo';
+  src: url('../fonts/GuyonGazebo-Regular.otf');
+}
+
+%font-sans-serif {
+  font-family: 'Manrope', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+%font-display {
+  font-family: 'Guyon Gazebo', 'Manrope', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+%h1 {
+  font-size: 5.75rem;
+  font-style: normal;
+  line-height: 6.4375rem;
+  text-transform: uppercase;
+  @extend %font-display;
+}
+
+%h2 {
+  @extend %font-sans-serif;
+}
+
+%h3 {
+  @extend %font-sans-serif;
+}
+
+%p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  @extend %font-sans-serif;
+}
+
+%a {
+  @extend %font-sans-serif;
+}
+
+%label {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.5em;
+  font-weight: 300;
+  @extend %font-sans-serif;
+}
+
+%input {
+  @extend %font-sans-serif;
+}
+
+
+label {
+  @apply block text-xs uppercase tracking-wider font-light text-gray-700;
+}
+
+h1 {
+  @extend %h1;
+}

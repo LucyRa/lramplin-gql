@@ -1,0 +1,6 @@
+@import './mixins.scss';
+@import './colours.scss';
+
+.btn {
+  @include solidButton();
+}

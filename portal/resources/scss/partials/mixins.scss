@@ -1,0 +1,43 @@
+@mixin button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+@mixin solidButton($bgColour: false, $hoverColour: false, $textColour: false, $hoverText: false) {
+  @include button;
+  
+  @if $bgColour {
+    background-color: $bgColour;
+  } @else {
+    @apply bg-teal-600;
+  }
+
+  @if $textColour {
+    color: $textColour;
+  } @else {
+    @apply text-white;
+  }
+
+  &:hover {
+    @if $hoverColour {
+      background-color: $hoverColour;
+    } @else {
+      @apply bg-purple-600;
+    }
+
+    @if $hoverText {
+      color: $hoverText;
+    } @else {
+      @apply text-black;
+    }
+    
+  }
+}
+
+@mixin outlineButton($colour) {
+  border: 1px solid $colour;
+}

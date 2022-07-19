@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-purple-500;
-}
+@import './partials/colours.scss';
+@import './partials/typography.scss';
+@import './partials/buttons.scss';
+@import './partials/forms.scss';
