@@ -36,6 +36,7 @@ select {
   background-color: $core-light;
   border: 0;
   box-shadow: 1px 4px 8px rgba(0, 10, 10, 0.1);
+  color: $white;
 
   &:active,
   &:focus,
@@ -65,6 +66,12 @@ div.form-input-group {
       width: 1.25rem;
       height: 1.25rem;
       border-radius: 0.25rem;
+    }
+  }
+
+  &:focus-within {
+    label {
+      color: $primary;
     }
   }
 }
