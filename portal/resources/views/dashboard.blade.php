@@ -1,4 +1,4 @@
-<X-app-layout>
+<x-app-layout>
   <header>
     <form action="{{ route('logout') }}" method="POST">
       @csrf
@@ -9,4 +9,4 @@
   <div>
     This is the logged in view
   </div>
-</X-app-layout>
+</x-app-layout>

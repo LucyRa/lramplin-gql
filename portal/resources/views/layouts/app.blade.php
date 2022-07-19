@@ -12,7 +12,9 @@
     <body class="antialiased app">
         <livewire:sidebar/>
 
-        {{$slot }}
+        <main>
+          {{ $slot }}
+        </main>
 
         @livewireScripts
     </body>

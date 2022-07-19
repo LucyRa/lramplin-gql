@@ -75,3 +75,7 @@ h1,
 h2 {
   @extend %h2;
 }
+
+.btn {
+  @extend %font-sans-serif, %p, %uppercase;
+}
