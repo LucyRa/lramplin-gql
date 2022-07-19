@@ -7,11 +7,9 @@
 @import './partials/buttons.scss';
 @import './partials/forms.scss';
 
-body {
-  background-color: $core;
-}
-
 body.guest {
+  background-color: $core-dark;
+  
   main {
     display: flex;
     justify-content: center;
@@ -26,4 +24,8 @@ body.guest {
       width: 100%;
     }
   }
+}
+
+body.app {
+
 }

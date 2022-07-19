@@ -9,8 +9,8 @@
         @livewireStyles
         @vite('resources/js/app.js')
     </head>
-    <body class="antialiased">
-        {{-- Add sidepanel --}}
+    <body class="antialiased app">
+        <livewire:sidebar/>
 
         {{$slot }}
 

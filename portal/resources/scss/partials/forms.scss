@@ -13,7 +13,38 @@
 [multiple], 
 textarea, 
 select {
+  caret-color: $white;
   border-radius: 0.5rem;
+}
+
+[type='text'], 
+[type='email'], 
+[type='url'], 
+[type='password'], 
+[type='number'], 
+[type='date'], 
+[type='datetime-local'], 
+[type='month'], 
+[type='search'], 
+[type='tel'], 
+[type='time'], 
+[type='week'], 
+[multiple],
+[type="checkbox"],
+textarea,
+select {
+  background-color: $core-light;
+  border: 0;
+  box-shadow: 1px 4px 8px rgba(0, 10, 10, 0.1);
+
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    border: 1px solid $primary;
+    outline: 0;
+    box-shadow: 0px 0px 8px rgba(1, 163, 163, 0.3);
+  }
 }
 
 div.form-input-group {
@@ -28,6 +59,7 @@ div.form-input-group {
   input {
     width: 100%;
     max-width: 21.25rem;
+
 
     &[type="checkbox"] {
       width: 1.25rem;
@@ -45,7 +77,7 @@ form.user-auth {
   display: flex;
   flex-wrap: wrap;
   gap: 1.625rem;
-  background-color: $core-light;
+  background-color: $core;
 
   .form-input-group {
     width: 100%;
