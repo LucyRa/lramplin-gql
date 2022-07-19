@@ -1,0 +1,49 @@
+nav.sidebar {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  background-color: $core;
+
+  form,
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.825rem;
+    height: 2.825rem;
+    border-radius: 1.875rem;
+    color: $border;
+    transition: background-color 300ms ease, color 300ms ease;
+    
+    svg {
+      width: 1.875rem;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $core-light;
+      color: $white;
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+    width: 5rem;
+    height: 100vh;
+    top: 0;
+    right: unset;
+
+    .nav-items-container {
+      display: flex;
+      justify-content: center;
+      padding: 2.5rem 0.875rem;
+      min-height: 100%;
+    }
+
+    form {
+      align-self: flex-end;
+    }
+  }
+}
