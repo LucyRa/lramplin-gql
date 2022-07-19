@@ -9,30 +9,30 @@
 
 @mixin solidButton($bgColour: false, $hoverColour: false, $textColour: false, $hoverText: false) {
   @include button;
-  
+
   @if $bgColour {
     background-color: $bgColour;
   } @else {
-    @apply bg-teal-600;
+    background-color: $secondary;
   }
 
   @if $textColour {
     color: $textColour;
   } @else {
-    @apply text-white;
+    color: $white;
   }
 
   &:hover {
     @if $hoverColour {
       background-color: $hoverColour;
     } @else {
-      @apply bg-purple-600;
+      background-color: $primary;
     }
 
     @if $hoverText {
       color: $hoverText;
     } @else {
-      @apply text-black;
+      color: $core-dark;
     }
     
   }

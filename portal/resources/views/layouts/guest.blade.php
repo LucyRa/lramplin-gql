@@ -9,8 +9,10 @@
         @livewireStyles
         @vite('resources/js/app.js')
     </head>
-    <body class="antialiased">
-        {{ $slot }}
+    <body class="antialiased guest">
+        <main>
+            {{ $slot }}
+        </main>
         
         @livewireScripts
     </body>

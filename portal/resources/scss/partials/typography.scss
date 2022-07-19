@@ -8,21 +8,30 @@
 
 %font-sans-serif {
   font-family: 'Manrope', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: $white;
 }
 
 %font-display {
   font-family: 'Guyon Gazebo', 'Manrope', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: $white;
+}
+
+%uppercase {
+  text-transform: uppercase;
 }
 
 %h1 {
   font-size: 5.75rem;
   font-style: normal;
   line-height: 6.4375rem;
-  text-transform: uppercase;
-  @extend %font-display;
+  @extend %font-display, %uppercase;
 }
 
 %h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 2.75rem;
   @extend %font-sans-serif;
 }
 
@@ -41,11 +50,12 @@
 }
 
 %label {
-  font-size: 0.75rem;
-  line-height: 1.125rem;
-  letter-spacing: 0.5em;
+  font-size: 0.65rem;
   font-weight: 300;
-  @extend %font-sans-serif;
+  line-height: 1.125rem;
+  letter-spacing: 0.3em;
+  color: $border;
+  @extend %font-sans-serif, %uppercase;
 }
 
 %input {
@@ -54,9 +64,14 @@
 
 
 label {
-  @apply block text-xs uppercase tracking-wider font-light text-gray-700;
+  @extend %label;
 }
 
-h1 {
+h1,
+.statement-txt-large {
   @extend %h1;
+}
+
+h2 {
+  @extend %h2;
 }
