@@ -1,0 +1,12 @@
+main.dashboard {
+ width: 100vw;
+ height: calc(100vh - 5rem);
+ margin-top: 5rem;
+
+ @media only screen and (min-width: 1080px) {
+  width: calc(100vw - 5rem);
+  height: 100vh;
+  margin-top: unset;
+  margin-left: 5rem;
+ }
+}

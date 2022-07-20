@@ -12,7 +12,7 @@
     <body class="antialiased app">
         <livewire:sidebar/>
 
-        <main>
+        <main class="dashboard">
           {{ $slot }}
         </main>
 
