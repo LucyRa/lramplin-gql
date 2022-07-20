@@ -38,6 +38,25 @@
   }
 }
 
-@mixin outlineButton($colour) {
-  border: 1px solid $colour;
+@mixin outlineButton($colour: false, $hover: false) {
+  @include button;
+  border: 1px solid;
+
+  @if $colour {
+    border-color: $colour;
+    color: $color;
+  } @else {
+    border-color: $primary-dark; 
+    color: $primary-dark;
+  }
+
+  &:hover {
+    @if $hover {
+      border-color: $hover;
+      color: $hover;
+    } @else {
+      border-color: $tertiary;
+      color: $tertiary;
+    }
+  }
 }

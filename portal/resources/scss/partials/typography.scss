@@ -21,10 +21,15 @@
 }
 
 %h1 {
-  font-size: 5.75rem;
+  font-size: 3.75rem;
   font-style: normal;
-  line-height: 6.4375rem;
+  line-height: 4.4375rem;
   @extend %font-display, %uppercase;
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 5.75rem;
+    line-height: 6.4375rem;
+  }
 }
 
 %h2 {
@@ -63,7 +68,8 @@
 }
 
 
-label {
+label,
+.small-heading {
   @extend %label;
 }
 
@@ -72,7 +78,8 @@ h1,
   @extend %h1;
 }
 
-h2 {
+h2,
+.heading {
   @extend %h2;
 }
 

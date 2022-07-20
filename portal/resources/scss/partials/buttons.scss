@@ -4,3 +4,7 @@
 .btn {
   @include solidButton();
 }
+
+.btn-outline {
+  @include outlineButton();
+}
