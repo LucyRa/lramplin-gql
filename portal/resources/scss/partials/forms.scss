@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 [type='text'], 
 [type='email'], 
 [type='url'], 
@@ -77,14 +79,9 @@ div.form-input-group {
 }
 
 form.user-auth {
+  @include block;
   width: 100%;
   max-width: 25rem;
-  padding: 1.875rem 2.5rem 3rem 2.5rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.625rem;
-  background-color: $core;
 
   .form-input-group {
     width: 100%;

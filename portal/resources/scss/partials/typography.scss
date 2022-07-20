@@ -83,6 +83,10 @@ h2,
   @extend %h2;
 }
 
+p {
+  @extend %p;
+}
+
 .btn {
   @extend %font-sans-serif, %p, %uppercase;
 }

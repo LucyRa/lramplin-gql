@@ -60,3 +60,13 @@
     }
   }
 }
+
+@mixin block {
+  padding: 1.875rem 2.5rem 3rem 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.625rem;
+  background-color: $core;
+  padding: 1.875rem 2.5rem 3rem 2.5rem;
+}

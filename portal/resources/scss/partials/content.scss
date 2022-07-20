@@ -1,0 +1,24 @@
+@import './mixins.scss';
+@import './colours.scss';
+
+.form-block {
+  @include block;
+  width: fit-content;
+  max-width: 40rem;
+
+  p {
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    width: 100%;
+
+    &-btns {
+      @extend .form-container;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 1.375rem;
+    }
+  }
+}
