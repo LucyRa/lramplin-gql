@@ -41,4 +41,8 @@
         Log In
       </button>
     </form>
+
+    <a href="/forgot-password" class="block-link text-right">
+      Forgot Password?
+    </a>
   </div>

@@ -87,6 +87,15 @@ p {
   @extend %p;
 }
 
+a {
+  @extend %a;
+}
+
 .btn {
   @extend %font-sans-serif, %p, %uppercase;
+}
+
+a.block-link {
+  display: block;
+  margin-top: 1rem;
 }
