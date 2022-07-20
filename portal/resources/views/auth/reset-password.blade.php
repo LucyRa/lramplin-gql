@@ -30,16 +30,28 @@
       @endif
 
       <div class="form-container">
-        <form action="{{ route('password.email') }}" method="POST">
+        <form action="{{ route('password.update') }}" method="POST">
           @csrf
+
+          <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
           <div class="form-input-group !w-full">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="!max-w-full" value="{{ old('email') }}" autofocus>
+            <input type="email" id="email" name="email" class="!max-w-full" value="{{ old('email', $request->email) }}" autofocus>
+          </div>
+
+          <div class="form-input-group !w-full">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+      
+          <div class="form-input-group !w-full">
+            <label for="password_confirmation">Password Confirmation</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
           </div>
 
           <button class="btn mt-5 w-full float-right">
-            Email Password Reset Link
+            Reset Password
           </button>
         </form>
       </div>
