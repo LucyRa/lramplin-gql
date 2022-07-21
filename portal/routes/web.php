@@ -22,3 +22,7 @@ Route::middleware(['auth', 'verified'])->get('/dashboard', function() {
 Route::middleware(['auth', 'verified'])->get('/profile', function() {
   return view('profile');
 })->name('profile');
+
+Route::middleware(['auth', 'verified'])->get('/password', function() {
+  return view('password');
+})->name('password');
