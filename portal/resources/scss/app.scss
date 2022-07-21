@@ -38,4 +38,10 @@ body.app {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media only screen and (min-width: 1080px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3.75rem;
+  }
 }
