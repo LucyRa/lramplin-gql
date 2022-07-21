@@ -38,6 +38,7 @@ nav.sidebar {
     .nav-items-container {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 2.5rem 0.875rem;
       min-height: 100%;
     }
